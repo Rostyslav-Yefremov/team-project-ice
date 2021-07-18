@@ -125,9 +125,14 @@
   margin-bottom: 0;
 }
 .contacts__button {
+  padding-bottom: 113px;
   @include for-size(tablet) {
     display: flex;
     justify-content: center;
+  }
+
+  @include for-size(tablet) {
+    padding-bottom: 165px;
   }
 }
 
@@ -155,7 +160,7 @@
     width: 180px;
   }
   @include for-size(desktop) {
-    margin: 0 14px 0 0;
+    margin: 0 15px 0 0;
     width: 198px;
   }
 
