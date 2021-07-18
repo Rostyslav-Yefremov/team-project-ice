@@ -1,0 +1,74 @@
+.customer-rewiews {
+  padding: 83px 0 86px;
+}
+// .container__customer-rewiews {
+// }
+.img {
+  width: 85px;
+  padding-bottom: 29px;
+  margin: 0 auto;
+}
+.description {
+  position: relative;
+  padding: 43px 50px 20px 50px;
+  background: #fafafa;
+  margin: 0 auto;
+  margin-bottom: 52px;
+  width: 280px;
+  height: 308px;
+  &::after {
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    content: '';
+    background-image: url(/images/quotes.png);
+    width: 54px;
+    height: 40px;
+    // z-index: 0;
+  }
+}
+.description-text {
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  width: 180px;
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  color: $primary-black-color;
+  z-index: 999;
+}
+.a-gradient {
+  background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
+  background-size: 100% 1px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: center bottom 1px;
+}
+.name {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  color: $primary-black-color;
+
+  &::before {
+    position: absolute;
+    top: -20px;
+    left: 47%;
+    content: '';
+    width: 18px;
+    height: 5px;
+    background-color: tomato;
+  }
+  &::after {
+    position: absolute;
+    top: 50px;
+    left: 47%;
+    content: '';
+    width: 18px;
+    height: 5px;
+    background-color: tomato;
+  }
+}
