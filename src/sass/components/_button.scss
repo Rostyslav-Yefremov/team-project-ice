@@ -1,0 +1,22 @@
+.button {
+
+
+
+&__products {
+  position: absolute;
+  left: 50%;
+  bottom: 41px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: $bg-color-main;
+  &--icon {
+    fill: $accent-color;
+  }
+}
+
+
+
+}
