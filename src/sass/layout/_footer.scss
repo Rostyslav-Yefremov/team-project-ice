@@ -1,0 +1,39 @@
+.social-list__icon {
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: 768px), (min-width: 1200px) {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.title--footer {
+  margin-top: 113px;
+  //   max-width: 232px;
+  text-align: left;
+}
+
+.section-title--footer {
+  margin-top: 17px;
+  //   max-width: 200px;
+  text-align: left;
+}
+
+.footer-section {
+  border-bottom: 1px solid $border-color;
+}
+
+.copyright {
+  padding: 22px 0 25px;
+
+  &__text {
+    margin: 0 auto;
+    width: 150px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    color: $primary-text-color;
+  }
+}
