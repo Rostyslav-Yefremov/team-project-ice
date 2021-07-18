@@ -246,6 +246,7 @@ p {
 }
 
 .products__card {
+  display: block;
   margin: 0 auto;
   width: 280px;
   height: 485px;
