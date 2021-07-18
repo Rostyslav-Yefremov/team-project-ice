@@ -14,7 +14,8 @@
   background: #fafafa;
   margin: 0 auto;
   margin-bottom: 52px;
-  max-width: 280px;
+  width: 280px;
+  height: 308px;
   &::after {
     position: absolute;
     top: 8%;
@@ -27,14 +28,17 @@
   }
 }
 .description-text {
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  width: 180px;
   display: block;
-  //   width: 280px;
-  //   height: 308px;
   font-weight: 500;
   font-size: 12px;
   line-height: 255%;
   text-align: center;
   color: $primary-black-color;
+  z-index: 999;
 }
 .a-gradient {
   background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
@@ -47,6 +51,8 @@
   position: relative;
   text-align: center;
   margin-bottom: 40px;
+  color: $primary-black-color;
+
   &::before {
     position: absolute;
     top: -20px;
