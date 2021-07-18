@@ -9,10 +9,11 @@
   align-items: center;
 }
 
-.page-header__logo {
+.mobile-open {
   display: block;
-  max-width: 100%;
-  height: auto;
+  margin: 0;
+  padding: 0;
   border: none;
-  background-color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
