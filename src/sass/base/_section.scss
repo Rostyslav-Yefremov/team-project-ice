@@ -1,5 +1,14 @@
 .section{
-  &:nth-child(2n+3){
+  &:nth-child(3) {
+    background-color: $bg-color-secondary;
+  }
+  &:nth-child(4) {
+    background-color: $bg-color-secondary;
+  }
+  &:nth-child(7) {
+    background-color: $bg-color-secondary;
+  }
+  &:nth-child(8) {
     background-color: $bg-color-secondary;
   }
 }
