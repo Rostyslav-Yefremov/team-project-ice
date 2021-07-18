@@ -210,7 +210,7 @@ p {
 .products {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
+  margin: 121px 0 98px;
   padding: 0;
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
@@ -231,8 +231,7 @@ p {
 }
 
 .products__subtitle {
-  margin-top: 121px;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Titan One", cursive;
   font-size: 18px;
   line-height: 1.167;
   text-align: center;
@@ -256,7 +255,7 @@ p {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-row-gap: 10px;
+  grid-row-gap: 17px;
 }
 
 @media screen and (min-width: 768px) {
@@ -282,6 +281,18 @@ p {
   height: 598px;
 }
 
+.products__card:nth-child(1) .products__box {
+  background: #ffb8ca;
+}
+
+.products__card:nth-child(2) .products__box {
+  background: #f0d1a5;
+}
+
+.products__card:nth-child(3) .products__box {
+  background: #c2e297;
+}
+
 .products__img {
   display: block;
   position: absolute;
@@ -301,19 +312,63 @@ p {
   width: 280px;
   height: 485px;
   border: none;
-  background: #ffb8ca;
   border-radius: 24px;
 }
 
 .products__boxtitle {
   margin-top: 161px;
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.150;
+  letter-spacing: 0.04em;
   text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.products__ellipsis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin: 30px auto;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products__point {
+  width: 4px;
+  height: 4px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.products__point:not(:last-child) {
+  margin-right: 4px;
 }
 
 .products__boxtext {
-  margin-top: 30px;
   padding: 0 40px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.500;
+  letter-spacing: 0.04em;
   text-align: center;
+  color: #ffffff;
 }
 
 .touch-transform {
