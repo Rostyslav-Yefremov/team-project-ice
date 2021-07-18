@@ -1,23 +1,37 @@
 .customer-rewiews {
-  padding: 83px 0;
+  padding: 83px 0 86px;
 }
 // .containr__customer-rewiews {
 // }
 .img {
   width: 85px;
-  margin: 0 auto;
   padding-bottom: 29px;
+  margin: 0 auto;
 }
 .description {
-  margin: 0 auto;
+  position: relative;
   padding: 43px 66px 26px 57px;
+  background: #fafafa;
+  &::after {
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    content: '';
+    background-image: url(/images/quotes.png);
+    width: 54px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+}
+.description-text {
+  display: block;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 255%;
   text-align: center;
-  background: #fafafa;
 }
 .name {
   position: relative;
