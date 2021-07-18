@@ -1,0 +1,50 @@
+.section-advantages {
+  background-color: $bg-color-secondary;
+  padding-top: 39px;
+  padding-bottom: 101px;
+}
+
+.advantages-list {
+  &__item {
+    margin-bottom: 38px;
+    width: 230px;
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 170%;
+    color: $primary-black-color;
+  }
+}
+
+.advantages-list__section-title {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.advantages-list__item::before {
+  content: ' ';
+  display: block;
+  margin-bottom: 16px;
+  width: 33px;
+  height: 50px;
+  background-image: url(../images/icon1.png);
+  background-size: contain;
+}
+
+.apple::before {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/icon2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.heart::before {
+  width: 44px;
+  height: 50px;
+  background-image: url(../images/icon3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
