@@ -367,6 +367,12 @@ p {
   }
 }
 
+@media (min-width: 1200px) {
+  .contacts__line {
+    margin: 32px 0;
+  }
+}
+
 .period-card__time {
   color: #ffa5ba;
   margin-top: 0;
@@ -395,6 +401,7 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 165px;
   }
 }
 

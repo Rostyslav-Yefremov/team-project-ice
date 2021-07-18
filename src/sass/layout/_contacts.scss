@@ -109,6 +109,10 @@
   @include for-size(tablet) {
     margin: 30px 0;
   }
+
+  @include for-size(desktop) {
+    margin: 32px 0;
+  }
 }
 
 .period-card__time {
@@ -129,6 +133,7 @@
   @include for-size(tablet) {
     display: flex;
     justify-content: center;
+    padding-bottom: 165px;
   }
 
   @include for-size(tablet) {
@@ -166,9 +171,9 @@
 
   & svg {
     stroke: $bg-color-main;
-    width: 6px;
-    height: 12px;
-    margin-left: 8px;
+    width: 8px;
+    height: 16px;
+    margin-left: 13px;
     position: relative;
     bottom: -1px;
   }
@@ -203,9 +208,9 @@
 
   & svg {
     stroke: #d41443;
-    width: 6px;
-    height: 12px;
-    margin-left: 8px;
+    width: 8px;
+    height: 16px;
+    margin-left: 13px;
     position: relative;
     bottom: -1px;
   }
