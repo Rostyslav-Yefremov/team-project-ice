@@ -1,0 +1,62 @@
+.section-about {
+  background-image: url(../images/bg-milk.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  background-color: $bg-color-secondary;
+  padding-top: 125px;
+
+  &__description {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 46px;
+  }
+
+  &__main-title {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .section-about__text-main {
+    margin-bottom: 35px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $primary-black-color;
+  }
+
+  .section-about__text-primary {
+    margin-bottom: 45px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $primary-text-color;
+  }
+
+  &__button {
+    @include button(0 37px, #ffffff);
+    display: block;
+    color: $accent-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.286;
+    height: 44px;
+    width: 176px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-about {
+    background-image: url(../images/bg-milk2x.png);
+  }
+}
+
+.section-title {
+  margin-bottom: 26px;
+}
