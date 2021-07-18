@@ -1,7 +1,7 @@
 .customer-rewiews {
   padding: 83px 0 86px;
 }
-// .containr__customer-rewiews {
+// .container__customer-rewiews {
 // }
 .img {
   width: 85px;
@@ -10,9 +10,11 @@
 }
 .description {
   position: relative;
-  padding: 43px 66px 26px 57px;
+  padding: 43px 50px 20px 50px;
   background: #fafafa;
+  margin: 0 auto;
   margin-bottom: 52px;
+  max-width: 280px;
   &::after {
     position: absolute;
     top: 8%;
@@ -21,23 +23,42 @@
     background-image: url(/images/quotes.png);
     width: 54px;
     height: 40px;
+    // z-index: 0;
   }
 }
 .description-text {
   display: block;
-  font-family: DM Sans;
-  font-style: normal;
+  //   width: 280px;
+  //   height: 308px;
   font-weight: 500;
   font-size: 12px;
   line-height: 255%;
   text-align: center;
+  color: $primary-black-color;
+}
+.a-gradient {
+  background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
+  background-size: 100% 1px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: center bottom 1px;
 }
 .name {
   position: relative;
   text-align: center;
+  margin-bottom: 40px;
   &::before {
     position: absolute;
     top: -20px;
+    left: 47%;
+    content: '';
+    width: 18px;
+    height: 5px;
+    background-color: tomato;
+  }
+  &::after {
+    position: absolute;
+    top: 50px;
     left: 47%;
     content: '';
     width: 18px;
