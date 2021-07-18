@@ -23,7 +23,11 @@
   background-color: $bg-color-mob-menu;
   width: 250px;
   height: 100vh;
+  top: 0;
+  right: 0;
   z-index: 5;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__container {
@@ -39,6 +43,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .mobile-button {
@@ -86,4 +94,9 @@
   &:focus {
     color: $accent-color;
   }
+}
+
+.mobile-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
