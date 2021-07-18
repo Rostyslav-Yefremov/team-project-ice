@@ -3,49 +3,72 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: $primary-font;
+  // font-family: $primary-font;
   font-style: normal;
   list-style: none;
 
-  &__img {
-    display: block;
-    width: 249px;
-    height: 252px;
-  }
   &__title {
-    font-size: 28px;
-    line-height: 1.179;
-    margin-bottom: 30px;
+    // font-family: $accent-font;
+    font-size: 34px;
+    line-height: 1.147;
     text-align: center;
-
-    // @media screen and (min-width: $desktop) {
-    //   font-size: 36px;
-    //   line-height: 1.667;
-    //   margin-bottom: 50px;
-    // }
-  }
-  &__subtitle {
-    font-size: 14px;
-    line-height: 1.142;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    text-align: center;
+    color: $accent-color;
+  }
 
-    // @media screen and (min-width: $tablet) {
-    //   text-align: left;
-    // }
+  &__subtitle {
+    // font-family: $primary-font;
+    font-size: 18px;
+    line-height: 1.167;
+    text-align: center;
+    text-transform: uppercase;
+    color: $label-title-color;
   }
 
   &__title,
   &__subtitle {
     font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
+    font-weight: 400;
   }
 
   &__list {
+    width: 100%;
+    height: 598px;
     list-style: none;
+    padding-inline-start: 0px;
+    justify-content: center;
+
   }
+  &__img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 249px;
+    height: 252px;
+    margin: 0 auto;
+  }
+  
+  &__card {
+    margin: 0 auto;
+    width: 280px;
+    height: 485px;
+    border: none;
+    background: $bg-color-card1;
+    border-radius: 24px;
+  }
+
+
+
+  &__boxtitle {
+    text-align: center;
+  }
+  &__boxtext {
+    text-align: center;
+  }
+
 }
 
 // $mobile: 480px;
