@@ -12,6 +12,7 @@
   position: relative;
   padding: 43px 66px 26px 57px;
   background: #fafafa;
+  margin-bottom: 52px;
   &::after {
     position: absolute;
     top: 8%;
@@ -20,8 +21,6 @@
     background-image: url(/images/quotes.png);
     width: 54px;
     height: 40px;
-    margin-top: 30px;
-    margin-bottom: 18px;
   }
 }
 .description-text {
@@ -38,7 +37,7 @@
   text-align: center;
   &::before {
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 47%;
     content: '';
     width: 18px;
