@@ -1,0 +1,18 @@
+.page-header {
+  background-color: $bg-color-header;
+}
+
+.page-header__nav {
+  padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  background-color: inherit;
+}
