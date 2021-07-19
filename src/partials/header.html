@@ -1,11 +1,46 @@
 <header class="page-header">
     <nav class="page-header__nav container">
         <a href="" id="page-header" class="page-header__link"><img class="page-header__logo" src="../src/images/logo.png" alt="logo" width="199"></a>
-        <button class="mobile-open">
-            <svg class="mobile-open__icon" width="40" height="23">
-                <use href="../src/images/icon.svg#icon-burger"></use>
-            </svg>
-        </button>
+        <ul class="page-header__nav--list">
+            <li class="page-header__nav--item">
+                <a href="#page-header" class="page-header__nav--link">
+                    Home
+                </a>
+            </li>
+            <li class="page-header__nav--item">
+                <a href="" class="page-header__nav--link">
+                    About us
+                </a>
+            </li>
+            <li class="page-header__nav--item">
+                <a href="" class="page-header__nav--link">
+                    How it's made?
+                </a>
+            </li>
+            <li class="page-header__nav--item">
+                <a href="" class="page-header__nav--link">
+                    Our products
+                </a>
+            </li>
+            <li class="page-header__nav--item">
+                <a href="#contacts" class="page-header__nav--link">
+                    Contacts
+                </a>
+            </li>
+        </ul>
+        <div class="header-buttons">
+            <button class="mobile-open">
+                <svg class="mobile-open__icon" width="40" height="23">
+                    <use href="../src/images/icon.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <button type="submit" class="header-button">
+                <span class="header-button__text">Buy now</span>
+                <svg class="header-button__icon" width="8" height="16">
+                    <use href="../src/images/icon.svg#icon-arrow-2"></use>
+                </svg>
+            </button>
+        </div>
     </nav>
     <div class="mobile-menu is-hidden">
         <div class="mobile-menu__container">
