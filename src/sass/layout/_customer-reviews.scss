@@ -61,11 +61,15 @@
   text-align: center;
   color: $primary-black-color;
   z-index: 999;
+  padding: 5px 5px 0 5px;
   @media screen and (min-width: 768px) {
+    width: 460px;
     font-size: 14px;
     line-height: 30.24px;
+    padding: 0;
   }
   @media screen and (min-width: 1280px) {
+    width: 750px;
     font-size: 16px;
     line-height: 29.76px;
   }
