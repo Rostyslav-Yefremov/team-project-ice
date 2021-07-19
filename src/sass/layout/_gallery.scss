@@ -1,15 +1,25 @@
+.gallery {
+  background-image: linear-gradient(to bottom, rgb(255, 245, 246) 40%, #ffffff 40%);
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(to bottom, rgb(255, 245, 246) 30%, #ffffff 30%);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(to bottom, rgb(255, 245, 246) 40%, #ffffff 40%);
+  }
+}
 .container__gallery {
   padding: 0;
   margin: 0 auto;
   display: block;
   background-size: cover;
-  //   background-color: $bg-color-secondary;
   background-image: url(../images/gallery.png);
   background-position: center;
-  max-width: 280px;
+  max-width: 320px;
   min-height: 100px;
   @media screen and (min-width: 480px) {
-    max-width: 320px;
+    max-width: 480px;
     min-height: 112px;
     background-image: url(../images/gallery.png);
   }
