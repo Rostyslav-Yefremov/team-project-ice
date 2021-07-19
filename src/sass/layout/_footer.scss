@@ -1,44 +1,11 @@
-.social-list__icon {
-  width: 32px;
-  height: 32px;
+// Футер
 
-  @media screen and (min-width: 768px), (min-width: 1200px) {
-    width: 34px;
-    height: 34px;
-  }
+.footer {
+  background-color: $bg-color-secondary;
 }
 
-.social-list {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 43px;
-
-  &__item:not(:last-child) {
-    margin-right: 28px;
-  }
-
-  // &__link:hover,
-  // &__link:focus {
-  //   fill: $accent-color;
-  // }
-}
-
-.contact-footer {
-  margin-top: 46px;
-
-  &__text {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.86;
-    text-align: right;
-    color: $primary-black-color;
-    margin-bottom: 43px;
-  }
-
-  &__link {
-    color: $accent-color;
-    display: inline-flex;
-  }
+.footer-section {
+  border-bottom: 1px solid $border-color;
 }
 
 // Заголовки в Футере
@@ -66,12 +33,57 @@
   }
 }
 
-.footer {
-  background-color: $bg-color-secondary;
+// Иконки соц.сетей
+
+.social-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 43px;
+
+  &__item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  &__link {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-icon-color;
+    border-radius: 50%;
+    fill: $primary-white-color;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+
+    @media screen and (min-width: 768px), (min-width: 1200px) {
+      width: 34px;
+      height: 34px;
+    }
+  }
 }
 
-.footer-section {
-  border-bottom: 1px solid $border-color;
+// Контакты в футере
+
+.contact-footer {
+  margin-top: 46px;
+
+  &__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: right;
+    color: $primary-black-color;
+    margin-bottom: 43px;
+  }
+
+  &__link {
+    color: $accent-color;
+    display: inline-flex;
+  }
 }
 
 // Копирайт
