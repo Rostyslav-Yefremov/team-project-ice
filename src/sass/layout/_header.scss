@@ -26,7 +26,7 @@
   top: 0;
   right: 0;
   z-index: 5;
-  transition-duration: 500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -45,20 +45,32 @@
   cursor: pointer;
   &:hover,
   &:focus {
-    color: $accent-color;
+    fill: $accent-color;
   }
 }
 
 .mobile-button {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 44px;
   border: none;
   border-radius: 22px;
   background-color: $primary-white-color;
   cursor: pointer;
+  padding-left: 62.5px;
+  padding-right: 48px;
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.mobile-button__icon {
+  stroke: $accent-color;
 }
 
 .mobile-button__text {
@@ -93,6 +105,8 @@
   &:hover,
   &:focus {
     color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
