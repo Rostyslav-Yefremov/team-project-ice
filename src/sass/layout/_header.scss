@@ -26,7 +26,7 @@
   top: 0;
   right: 0;
   z-index: 5;
-  transition-duration: 500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -43,9 +43,6 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-
-.mobile-close__icon {
   &:hover,
   &:focus {
     fill: $accent-color;
@@ -67,6 +64,8 @@
   &:hover,
   &:focus {
     background: #ecebeb;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -106,6 +105,8 @@
   &:hover,
   &:focus {
     color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
