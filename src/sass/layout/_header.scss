@@ -14,7 +14,6 @@
 
 .page-header__nav--list {
   display: none;
-  pointer-events: none;
   @media screen and (min-width: 1280px) {
     display: flex;
     list-style: none;
@@ -36,7 +35,8 @@
   color: $primary-white-color;
   cursor: pointer;
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: $accent-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,7 +64,6 @@
 
 .header-button {
   display: none;
-  pointer-events: none;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -84,6 +83,9 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 0;
   }
 }
 
