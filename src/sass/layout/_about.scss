@@ -37,6 +37,11 @@
       padding-right: 2px;
       padding-left: 17px;
     }
+
+    @media screen and (min-width: 1280px) {
+      padding-right: 0px;
+      padding-left: 74px;
+    }
   }
 
   &__main-title {
@@ -55,6 +60,11 @@
     font-size: 12px;
     line-height: 1.62;
     color: $primary-black-color;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.76;
+    }
   }
 
   .section-about__text-primary {
@@ -67,6 +77,12 @@
     @media screen and (min-width: 768px) {
       margin-bottom: 62px;
     }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 45px;
+      font-size: 14px;
+      line-height: 1.94;
+    }
   }
 
   &__button {
@@ -78,11 +94,27 @@
     line-height: 1.286;
     height: 44px;
     width: 176px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.313;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
   }
 }
 
 .section-title {
   margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 55px;
+  }
 }
 
 .wraper {
@@ -101,5 +133,15 @@
   @media screen and (min-width: 1280px) {
     max-width: 516px;
     max-height: 516px;
+    margin-left: 0px;
   }
+}
+
+.button-icon {
+  stroke: $accent-color;
+  width: 8px;
+  height: 16px;
+  margin-left: 6px;
+  position: relative;
+  bottom: -3px;
 }
