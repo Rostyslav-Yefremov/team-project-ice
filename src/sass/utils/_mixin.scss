@@ -33,3 +33,15 @@
   border-radius: 22px;
   cursor: pointer;
 }
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin push-auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
