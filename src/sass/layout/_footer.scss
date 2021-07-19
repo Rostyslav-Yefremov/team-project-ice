@@ -8,6 +8,26 @@
   border-bottom: 1px solid $border-color;
 }
 
+.footer-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.container-description {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 91px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 97px;
+  }
+}
+
 // Заголовки в Футере
 
 .title--footer {
@@ -27,9 +47,11 @@
   text-align: left;
   @media screen and (min-width: 768px) {
     max-width: 340px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     max-width: 474px;
+    margin-bottom: 0;
   }
 }
 
@@ -39,6 +61,12 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 43px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 0;
+  }
 
   &__item:not(:last-child) {
     margin-right: 28px;
@@ -70,15 +98,12 @@
 
 .contact-footer {
   margin-top: 46px;
-
-  &__text {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.86;
-    text-align: right;
-    color: $primary-black-color;
-    margin-bottom: 43px;
-  }
+  margin-bottom: 43px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+  color: $primary-black-color;
 
   &__link {
     color: $accent-color;
