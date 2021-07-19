@@ -41,12 +41,20 @@
 
   &::after {
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 20%;
     content: '';
     background-image: url(/images/quotes.png);
     width: 54px;
     height: 40px;
+    @media screen and (min-width: 768px) {
+      top: 15%;
+      left: 2%;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 18%;
+      left: 2%;
+    }
   }
 }
 .description-text {
