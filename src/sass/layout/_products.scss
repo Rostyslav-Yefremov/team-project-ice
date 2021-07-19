@@ -6,6 +6,12 @@
   font-family: $primary-font;
   font-style: normal;
   list-style: none;
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    margin: 122px 0 112px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 127px 0 119px;
+  }
 
   &__title {
     margin-top: 15px;
@@ -17,6 +23,17 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $accent-color;
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      margin-bottom: 39px;
+      font-size: 48px;
+      line-height: 1.146;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 49px;
+      font-size: 58px;
+      line-height: 1.138;
+      letter-spacing: 0.06em;
+    }
   }
 
   &__subtitle {
@@ -26,6 +43,15 @@
     text-align: center;
     text-transform: uppercase;
     color: $label-title-color;
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      font-size: 26px;
+      line-height: 1.154;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: 1.133;
+      letter-spacing: 0.04em;
+    }
   }
 
   &__title,
@@ -42,11 +68,17 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 17px;
-
-    @media screen and (min-width: 768px) {
-      display: grid;
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 10px;
+      grid-column-gap: 20px;
+      align-items: flex-end;
+    }
+    @media screen and (min-width: $desktop) {
+      grid-template-columns: 335px 337px 335px;
+      grid-column-gap: 23px;
+      &:nth-child(2) {
+        margin-left: 1px;
+      }
     }
   }
 
@@ -57,6 +89,21 @@
     margin: 0 auto;
     width: 100%;
     height: 598px;
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      width: 220px;
+      &:nth-child(1) {
+      height: 589px;
+      }
+      &:nth-child(2) {
+        height: 596px;
+      }
+      &:nth-child(3) {
+        height: 587px;
+      }
+    }
+      @media screen and (min-width: $desktop) {
+      height: 735px;
+    }
 
     &:nth-child(1) {
       .products__box {
@@ -74,6 +121,8 @@
       }
     }
   }
+
+
   &__img {
     display: block;
     position: absolute;
@@ -84,6 +133,25 @@
     height: 252px;
     margin: 0 auto;
     z-index: 2;
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      width: 220px;
+      &:nth-child(1) {
+        height: 226px;
+      }
+      &:nth-child(2) {
+        height: 233px;
+      }
+      &:nth-child(3) {
+        height: 224px;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      height: 335px;
+      width: 335px;
+      &:nth-child(2) {
+        width: 337px;
+      }
+    }
   }
   
   &__box {
@@ -93,7 +161,26 @@
     height: 485px;
     border: none;
     border-radius: 24px;    
-
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      width: 220px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 525px;
+      width: 329px;
+      &:nth-child(1) {
+        margin-left: 3px;
+        margin-right: 3px;
+      }
+      &:nth-child(2) {
+        width: 330px;
+        margin-left: 2px;
+        margin-right: 5px;
+      }
+      &:nth-child(3) {
+        margin-left: 2px;
+        margin-right: 4px;
+      }
+    }
   }
   
   &__boxtitle {
@@ -107,7 +194,16 @@
     text-align: center;
     text-transform: uppercase;
     color: $primary-white-color;
-  }
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      margin-top: 152px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;      
+      line-height: 1.1333;
+      margin-top: 163px;
+    }
+  }  
+ 
   &__ellipsis {
     display: flex;
     flex-direction: row;
@@ -119,18 +215,18 @@
   }
 
   &__point {
-      width: 4px;
-      height: 4px;
-      border: none;
-      border-radius: 50%;
-      background-color: $bg-color-main;
-      &:not(:last-child) {
-        margin-right: 4px;
-      }
+    width: 4px;
+    height: 4px;
+    border: none;
+    border-radius: 50%;
+    background-color: $bg-color-main;
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
   }
+  
 
   &__boxtext {
-    // margin-top: 30px;
     padding: 0 40px;
     font-family: $primary-font;
     font-style: normal;
@@ -140,9 +236,19 @@
     letter-spacing: 0.04em;
     text-align: center;
     color: $primary-white-color;
-
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      line-height: 1.7857;
+      padding: 0 11px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.750;
+      padding: 0 44px;
+      &:nth-child(2) {
+        padding: 0 45px 0 44px;
+      }
+    }
   }
-
 }
 
 // $mobile: 480px;
