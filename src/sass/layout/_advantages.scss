@@ -2,19 +2,53 @@
   background-color: $bg-color-secondary;
   padding-top: 39px;
   padding-bottom: 101px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 66px;
+  }
 }
 
 .advantages-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: -60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: -30px;
+  }
+
   &__item {
     margin-bottom: 38px;
     width: 230px;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 180px) / 3);
+      margin-left: 60px;
+      width: 180px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      flex-basis: calc((100% - 90px) / 3);
+      margin-left: 30px;
+      width: 330px;
+    }
   }
 
   &__text {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12px;
-    line-height: 170%;
+    line-height: 1.7;
     color: $primary-black-color;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.76;
+    }
   }
 }
 
@@ -31,6 +65,14 @@
   height: 50px;
   background-image: url(../images/icon1.png);
   background-size: contain;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
 }
 
 .apple::before {
