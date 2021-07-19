@@ -692,6 +692,23 @@ p {
   }
 }
 
+.products__boxtitle ::after {
+  content: '...';
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.150;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  font-size: 30px;
+  margin: 30px auto;
+  color: blue;
+}
+
 .products__ellipsis {
   display: -webkit-box;
   display: -ms-flexbox;

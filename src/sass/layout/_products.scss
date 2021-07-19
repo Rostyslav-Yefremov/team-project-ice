@@ -202,7 +202,8 @@
       line-height: 1.1333;
       margin-top: 163px;
     }
-  }
+  }  
+ 
   &__ellipsis {
     display: flex;
     flex-direction: row;
@@ -214,15 +215,16 @@
   }
 
   &__point {
-      width: 4px;
-      height: 4px;
-      border: none;
-      border-radius: 50%;
-      background-color: $bg-color-main;
-      &:not(:last-child) {
-        margin-right: 4px;
-      }
+    width: 4px;
+    height: 4px;
+    border: none;
+    border-radius: 50%;
+    background-color: $bg-color-main;
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
   }
+  
 
   &__boxtext {
     padding: 0 40px;
