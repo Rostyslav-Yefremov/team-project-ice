@@ -42,18 +42,18 @@
   &::after {
     position: absolute;
     top: 10%;
-    left: 20%;
+    left: 18%;
     content: '';
     background-image: url(/images/quotes.png);
     width: 54px;
     height: 40px;
     @media screen and (min-width: 768px) {
       top: 15%;
-      left: 2%;
+      left: 4.5%;
     }
     @media screen and (min-width: 1280px) {
       top: 18%;
-      left: 2%;
+      left: 5%;
     }
   }
 }
@@ -69,25 +69,26 @@
   text-align: center;
   color: $primary-black-color;
   z-index: 999;
-  padding: 5px 5px 0 5px;
+  padding: 0 16px 6px 7px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 28px,
+    #e1e1e1 29px,
+    transparent 30px
+  );
   @media screen and (min-width: 768px) {
-    width: 460px;
+    width: 524px;
     font-size: 14px;
     line-height: 30.24px;
-    padding: 0;
+    padding: 0 44px 6px 20px;
   }
   @media screen and (min-width: 1280px) {
-    width: 750px;
+    width: 813px;
     font-size: 16px;
     line-height: 29.76px;
+    padding: 0 35px 6px 28px;
   }
-}
-.a-gradient {
-  background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
-  background-size: 100% 1px;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: center bottom 1px;
 }
 .name {
   position: relative;
