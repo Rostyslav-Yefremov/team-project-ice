@@ -184,7 +184,7 @@
   }
   
   &__boxtitle {
-    margin-top: 161px;
+        margin-top: 161px;
     font-family: $accent-font;
     font-style: normal;
     font-weight: 400;
@@ -201,6 +201,23 @@
       font-size: 30px;      
       line-height: 1.1333;
       margin-top: 163px;
+    }
+    &::after {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      content: '';
+      background-image: url(../images/group-dot.png);
+      width: 26px;
+      height: 6px;
+      top: 214px;
+      z-index: 3;
+      @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+        top: 205px;
+      }
+      @media screen and (min-width: $desktop) {
+        top: 229px;
+      }
     }
   }  
  
@@ -225,6 +242,11 @@
     }
   }
   
+  // &__dots {
+  //   width: 30px;
+  //   height: 10px;
+  //   fill: #000
+  // }
 
   &__boxtext {
     padding: 0 40px;
@@ -236,11 +258,13 @@
     letter-spacing: 0.04em;
     text-align: center;
     color: $primary-white-color;
+    margin-top: 66px;
     @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
       line-height: 1.7857;
       padding: 0 11px;
     }
     @media screen and (min-width: $desktop) {
+      margin-top: 70px;
       font-size: 16px;
       line-height: 1.750;
       padding: 0 44px;
