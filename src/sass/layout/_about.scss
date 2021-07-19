@@ -1,8 +1,29 @@
 .section-about {
-  background-image: url(../images/bg-milk.png);
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/bg-milk.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .section-about {
+        background-image: url(../images/bg-milk2x.png);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/bg-milk.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .section-about {
+        background-image: url(../images/bg-milk2x.png);
+      }
+    }
+  }
 
   background-color: $bg-color-secondary;
   padding-top: 125px;
@@ -11,6 +32,11 @@
     padding-right: 30px;
     padding-left: 30px;
     margin-top: 46px;
+
+    @media screen and (min-width: 768px) {
+      padding-right: 2px;
+      padding-left: 17px;
+    }
   }
 
   &__main-title {
@@ -37,6 +63,10 @@
     font-size: 12px;
     line-height: 1.62;
     color: $primary-text-color;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 62px;
+    }
   }
 
   &__button {
@@ -51,12 +81,25 @@
   }
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .section-about {
-    background-image: url(../images/bg-milk2x.png);
+.section-title {
+  margin-bottom: 26px;
+}
+
+.wraper {
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 
-.section-title {
-  margin-bottom: 26px;
+.cow {
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+    max-height: 340px;
+    margin-left: 5px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 516px;
+    max-height: 516px;
+  }
 }
