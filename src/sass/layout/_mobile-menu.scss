@@ -22,10 +22,6 @@
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 19px;
-  // padding: 60px 20px 19px 21px;
-  // @media screen and (min-width: 768px) {
-  //   padding: 60px 34px 19px 34px;
-  // }
 }
 
 .mobile-close {
@@ -89,7 +85,7 @@
 .nav-list__item {
   display: flex;
   align-items: center;
-  padding-left: 21px;
+  padding-left: 30px;
   border-bottom: 1px solid #e18298;
   &:first-child {
     border-top: 1px solid #e18298;
