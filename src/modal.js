@@ -12,3 +12,18 @@
     refs.modal.classList.toggle('closed');
   }
 })();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-opened]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('closed');
+  }
+})();
