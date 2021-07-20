@@ -151,14 +151,27 @@
 }
 
 .modal-close__button {
+  display: flex;
   position: absolute;
+  align-items: center;
+  justify-content: center;
   right: 20px;
   top: 14px;
   margin: 0;
   padding: 0;
   border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    background: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .modal-close__icon {
