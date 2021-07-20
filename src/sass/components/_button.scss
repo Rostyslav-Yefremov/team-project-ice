@@ -1,22 +1,33 @@
 .button {
 
+  &__products {
+
+    position: absolute;
+    left: 50%;
+    bottom: 41px;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-color: #fff;
+    border-radius: 50%;
+    background-color: $bg-color-main;
+
+    &--icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      fill: $accent-color;
+    }
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: #ECEBEB;
+      border: 1px solid $accent-color;
+    }
 
 
-&__products {
-  position: absolute;
-  left: 50%;
-  bottom: 41px;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  background-color: $bg-color-main;
-  &--icon {
-    fill: $accent-color;
+
   }
-}
-
-
-
 }
