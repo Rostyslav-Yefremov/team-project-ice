@@ -124,23 +124,23 @@
       left: 48.5%;
     }
   }
-  &::after {
-    position: absolute;
-    top: 50px;
-    left: 42%;
-    content: '';
-    background-image: url(/images/pagination.png);
-    width: 73px;
-    height: 12px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @media screen and (min-width: 768px) {
-      top: 47px;
-      left: 45%;
-    }
-    @media screen and (min-width: 1280px) {
-      top: 42px;
-      left: 46%;
-    }
-  }
+  // &::after {
+  //   position: absolute;
+  //   top: 50px;
+  //   left: 42%;
+  //   content: '';
+  //   background-image: url(/images/pagination.png);
+  //   width: 73px;
+  //   height: 12px;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   @media screen and (min-width: 768px) {
+  //     top: 47px;
+  //     left: 45%;
+  //   }
+  //   @media screen and (min-width: 1280px) {
+  //     top: 42px;
+  //     left: 46%;
+  //   }
+  // }
 }
