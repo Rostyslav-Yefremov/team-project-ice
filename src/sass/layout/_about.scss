@@ -30,12 +30,20 @@
 
   &__description {
     padding-right: 30px;
-    padding-left: 30px;
+    margin-left: 30px;
     margin-top: 46px;
+
+    position: relative;
+    overflow: hidden;
 
     @media screen and (min-width: 768px) {
       padding-right: 2px;
-      padding-left: 17px;
+      margin-left: 17px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-right: 0px;
+      margin-left: 74px;
     }
   }
 
@@ -55,6 +63,11 @@
     font-size: 12px;
     line-height: 1.62;
     color: $primary-black-color;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.76;
+    }
   }
 
   .section-about__text-primary {
@@ -67,6 +80,12 @@
     @media screen and (min-width: 768px) {
       margin-bottom: 62px;
     }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 45px;
+      font-size: 14px;
+      line-height: 1.94;
+    }
   }
 
   &__button {
@@ -78,11 +97,27 @@
     line-height: 1.286;
     height: 44px;
     width: 176px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.313;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
   }
 }
 
 .section-title {
   margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 55px;
+  }
 }
 
 .wraper {
@@ -101,5 +136,61 @@
   @media screen and (min-width: 1280px) {
     max-width: 516px;
     max-height: 516px;
+    margin-left: 0px;
   }
+}
+
+.button-icon {
+  stroke: $accent-color;
+  width: 8px;
+  height: 16px;
+  margin-left: 6px;
+  position: relative;
+  bottom: -3px;
+}
+
+.overlay {
+  position: absolute;
+  // display: none;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  overflow-y: scroll;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+
+  // box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    padding: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 45px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $primary-text-color;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.94;
+    }
+  }
+}
+.is-open {
+  transform: translateY(0);
+  opacity: 1;
 }

@@ -1,11 +1,48 @@
 <header class="page-header">
     <nav class="page-header__nav container">
-        <a href="" id="page-header" class="page-header__link"><img class="page-header__logo" src="../src/images/logo.png" alt="logo" width="199"></a>
-        <button class="mobile-open">
-            <svg class="mobile-open__icon" width="40" height="23">
-                <use href="../src/images/icon.svg#icon-burger"></use>
-            </svg>
-        </button>
+        <a class="page-header__logo" href="" id="page-header">
+            <img src="../src/images/logo.png" alt="logo" width="199">
+        </a>
+        <ul class="page-header__nav--list">
+            <li class="page-header__nav--item">
+                <a href="" class="page-header__nav--link">
+                    Home
+                </a>
+            </li>
+            <li class="page-header__nav--item">
+                <a href="#footer" class="page-header__nav--link">
+                    About us
+                </a>
+            </li>
+            <li class="page-header__nav--item">
+                <a href="#about" class="page-header__nav--link">
+                    How it's made?
+                </a>
+            </li>
+            <li class="page-header__nav--item">
+                <a href="#products" class="page-header__nav--link">
+                    Our pruducts
+                </a>
+            </li>
+            <li class="page-header__nav--item">
+                <a href="#contacts" class="page-header__nav--link">
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <div class="header-buttons">
+            <button class="mobile-open">
+                <svg class="mobile-open__icon" width="40" height="23">
+                    <use href="../src/images/icon.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <button type="submit" class="header-button">
+                <span class="header-button__text">Buy now</span>
+                <svg class="header-button__icon" width="8" height="16">
+                    <use href="../src/images/icon.svg#icon-arrow-2"></use>
+                </svg>
+            </button>
+        </div>
     </nav>
     <div class="mobile-menu is-hidden">
         <div class="mobile-menu__container">
@@ -14,7 +51,7 @@
                     <use href="../src/images/icon.svg#icon-close"></use>
                 </svg>
             </button>
-            <button type="submit" class="mobile-button">
+            <button data-modal-open type="button" class="mobile-button">
                 <span class="mobile-button__text">Buy now</span>
                 <svg class="mobile-button__icon" width="8" height="16">
                     <use href="../src/images/icon.svg#icon-arrow-2"></use>
@@ -28,17 +65,17 @@
                 </a>
             </li>
             <li class="nav-list__item">
-                <a href="" class="nav-list__link">
+                <a href="#footer" class="nav-list__link">
                     About us
                 </a>
             </li>
             <li class="nav-list__item">
-                <a href="" class="nav-list__link">
+                <a href="#about" class="nav-list__link">
                     How it's made?
                 </a>
             </li>
             <li class="nav-list__item">
-                <a href="" class="nav-list__link">
+                <a href="#products" class="nav-list__link">
                     Our products
                 </a>
             </li>
@@ -49,4 +86,28 @@
             </li>
         </ul>
     </div>
+    <div data-modal class="backdrop touch-transform closed">
+        <div class="modal touch-transform">
+            <h2 class="modal-header">Which one?</h2>
+            <button data-modal-close class="modal-close__button">
+                <svg class="modal-close__icon" width="16" height="16">
+                    <use href="../src/images/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="buying__list" >
+                <li class="buying__item">
+                    <a href=""><img src="../src/images/ice-cream.png" alt="ice-cream"></a>
+                </li>
+                <li class="buying__item">
+                    <a href=""><img src="../src/images/ice-coffee.png" alt="ice-coffee"></a>
+                </li>
+                <li class="buying__item">
+                    <a href=""><img src="../src/images/milkshakes.png" alt="milkshake"></a>
+                </li>
+            </ul>
+            <button type="submit" class="modal-buy__button">
+                <span class="modal-buy__text">Buy</span>
+            </button>
+        </div>
+    </div>    
 </header>

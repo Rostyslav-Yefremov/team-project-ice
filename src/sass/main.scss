@@ -1,16 +1,10 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
-@import './example';
 
 // Стили для МОРОЖЕНКА
 
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixin';
+@import './utils/placeholder';
 
 @import './base/section';
 @import './base/container';
@@ -24,6 +18,7 @@
 
 @import './layout/hero';
 @import './layout/header';
+@import './layout/mobile-menu';
 @import './layout/products';
 @import './layout/about';
 @import './layout/advantages';
