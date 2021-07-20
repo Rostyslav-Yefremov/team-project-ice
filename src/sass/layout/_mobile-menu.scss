@@ -25,16 +25,29 @@
 }
 
 .mobile-close {
+  display: flex;
   position: absolute;
-  top: 23px;
-  right: 28.26px;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 0;
   border: none;
+  border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
   @media screen and (min-width: 768px) {
     right: 34px;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
