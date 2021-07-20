@@ -1,6 +1,6 @@
 <header class="page-header">
     <nav class="page-header__nav container">
-        <a href="" id="page-header">
+        <a class="page-header__logo" href="" id="page-header">
             <img src="../src/images/logo.png" alt="logo" width="199">
         </a>
         <ul class="page-header__nav--list">
@@ -51,7 +51,7 @@
                     <use href="../src/images/icon.svg#icon-close"></use>
                 </svg>
             </button>
-            <button type="submit" class="mobile-button">
+            <button data-modal-open type="button" class="mobile-button">
                 <span class="mobile-button__text">Buy now</span>
                 <svg class="mobile-button__icon" width="8" height="16">
                     <use href="../src/images/icon.svg#icon-arrow-2"></use>
@@ -86,4 +86,28 @@
             </li>
         </ul>
     </div>
+    <div data-modal class="backdrop touch-transform closed">
+        <div class="modal touch-transform">
+            <h2 class="modal-header">Which one?</h2>
+            <button data-modal-close class="modal-close__button">
+                <svg class="modal-close__icon" width="16" height="16">
+                    <use href="../src/images/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="buying__list" >
+                <li class="buying__item">
+                    <a href=""><img src="../src/images/ice-cream.png" alt="ice-cream"></a>
+                </li>
+                <li class="buying__item">
+                    <a href=""><img src="../src/images/ice-coffee.png" alt="ice-coffee"></a>
+                </li>
+                <li class="buying__item">
+                    <a href=""><img src="../src/images/milkshakes.png" alt="milkshake"></a>
+                </li>
+            </ul>
+            <button type="submit" class="modal-buy__button">
+                <span class="modal-buy__text">Buy</span>
+            </button>
+        </div>
+    </div>    
 </header>
