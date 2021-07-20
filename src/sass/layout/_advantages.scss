@@ -59,6 +59,12 @@
 .advantages-list__section-title {
   text-align: left;
   margin-bottom: 15px;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.advantages-list__item:hover .advantages-list__section-title {
+  transform: scaleY(1.2);
 }
 
 .advantages-list__item::before {

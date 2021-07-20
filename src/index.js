@@ -27,3 +27,20 @@ import './sass/main.scss';
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
+(() => {
+    const aboutBtnRef = document.querySelector("[data-about-button]");
+    const overlayRef = document.querySelector("[data-overlay]");
+
+    aboutBtnRef.addEventListener("click", () => {
+
+      overlayRef.classList.toggle("is-open");
+
+    });
+
+    overlayRef.addEventListener("click", () => {
+
+        overlayRef.classList.remove("is-open");
+
+    });
+})();
