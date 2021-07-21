@@ -1527,7 +1527,7 @@ p {
 #open-block-1:target .open-block-inner {
   left: 50%;
   top: 50%;
-  background-color: #ffb8ca;
+  background: radial-gradient(at bottom, #ffcad8, #ffb8ca);
   text-shadow: 1px 1px 0.3em #860022, 2px 2px 2em #ff004090;
 }
 
@@ -1539,7 +1539,7 @@ p {
 #open-block-2:target .open-block-inner {
   left: 50%;
   top: 50%;
-  background-color: #f0d1a5;
+  background: radial-gradient(at bottom, #ffe9c9, #f0d1a5);
   text-shadow: 1px 1px 0.3em #854d00, 2px 2px 2em #ff950090;
 }
 
@@ -1551,7 +1551,7 @@ p {
 #open-block-3:target .open-block-inner {
   left: 50%;
   top: 50%;
-  background-color: #c2e297;
+  background: radial-gradient(at bottom, #e8ffcb, #c2e297);
   text-shadow: 1px 1px 0.3em #4b8500, 2px 2px 2em #c2e29790;
 }
 
