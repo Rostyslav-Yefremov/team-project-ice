@@ -1,7 +1,11 @@
 .contacts {
   background-color: $bg-color-secondary;
   color: black;
+  padding-bottom: 113px;
 
+  @include for-size(tablet) {
+    padding-bottom: 165px;
+  }
   @include for-size(desktop) {
     background-image: url('../images/bg-contacts.png');
     background-repeat: no-repeat;
@@ -129,15 +133,9 @@
   margin-bottom: 0;
 }
 .contacts__button {
-  padding-bottom: 113px;
   @include for-size(tablet) {
     display: flex;
     justify-content: center;
-    padding-bottom: 165px;
-  }
-
-  @include for-size(tablet) {
-    padding-bottom: 165px;
   }
 }
 
