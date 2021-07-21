@@ -475,6 +475,12 @@
 
   .actions:hover {
     display: block;
+    // @media screen and (max-width: 768px) {
+    //   .contacts-card__button--franchise {
+    //     opacity: 0;
+    //     pointer-events: none;
+    //   }
+    // }
   }
 }
 .actions:hover .location-list#actions {
@@ -503,13 +509,6 @@
     background-color: $border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (max-width: 768px) {
-      .contacts-card__button--franchise {
-        // visibility: hidden;
-        // overflow: hidden;
-      }
-    }
   }
   @media screen and (min-width: 768px) {
     // padding-left: 24px;
@@ -522,3 +521,19 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.contacts__button:active .contacts-card__button--franchise,
+.contacts__button:hover .contacts-card__button--franchise {
+  @media screen and (max-width: 767px) {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+// .contacts__button:not(:active) .contacts-card__button--franchise,
+// .contacts__button:not(:hover) .contacts-card__button--franchise {
+//   @media screen and (max-width: 767px) {
+//     opacity: 1;
+//     pointer-events: visible;
+//   }
+// }
