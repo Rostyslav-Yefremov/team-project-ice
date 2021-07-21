@@ -3,7 +3,6 @@
 
   background-color: $bg-color-header;
   width: 100%;
-  // max-width: 320px;
 
   height: 446px;
   display: flex;
@@ -14,14 +13,12 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    // max-width: 768px;
     height: 301px;
     align-items: flex-end;
   }
 
   @media screen and (min-width: 1280px) {
-    // max-width: 1280px;
-    height: 594px;
+    height: 583px;
     align-items: flex-end;
   }
 }
@@ -29,22 +26,22 @@
 .ellipse {
   position: absolute;
   top: 23px;
-  left: 36px;
+  left: 11%;
 
   width: 346px;
   height: 344px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     top: -52px;
-    left: 307px;
+    left: 40%;
 
     width: 324px;
     height: 322px;
   }
-
+  
   @media screen and (min-width: 1280px) {
-    top: -24px;
-    left: 475px;
+    top: -36px;
+    left: 40%;
 
     width: 538px;
     height: 538px;
@@ -54,22 +51,22 @@
 .ice-cream {
   position: absolute;
   top: 36px;
-  left: 117px;
+  left: 37%;
 
   width: 171px;
   height: 410px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     top: -35px;
-    left: 378px;
+    left: 49%;
 
     width: 143px;
     height: 336px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 37px;
-    left: 594px;
+    top: 26px;
+    left: 50%;
 
     width: 236px;
     height: 557px;
@@ -234,8 +231,9 @@
   height: 126px;
 
   @media screen and (min-width: 1280px) {
-    top: 342px;
-    left: 77px;
+    top: 329px;
+    left: 6%;
+
     width: 188px;
     height: 191px;
   }
@@ -248,14 +246,14 @@
 
   position: absolute;
   top: 168px;
-  left: 566px;
+  left: 74%;
   
   width: 168px;
   height: 133px;
 
   @media screen and (min-width: 1280px) {
-  top: 362px;
-  left: 878px;
+  top: 350px;
+  left: 71%;
 
   width: 293px;
   height: 232px;
@@ -295,14 +293,13 @@
 
   display: flex;
   flex-direction: column;
-
-  position: absolute;
-  top: 12px;
-  left: 691px;
+  align-items: flex-end;
+  margin-bottom: 72px;
+  margin-right: -15px;
 
   @media screen and(min-width: 1280px) {
-    top:74px;
-    left: 1111px;
+    margin-bottom: 150px;
+    margin-right: -34px;
   }
 }
 
@@ -318,9 +315,30 @@
 
   color: $accent-color;
 
+  &::after {
+  content: '';
+  background-image: url(/images/ellipse-hero-white.png);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+  
+
   @media screen and(min-width: 1280px) {
-    font-size: 46px;
-    line-height:1.15;
+  font-size: 46px;
+  line-height:1.15;
+
+    &::after {
+      content: '';
+    background-image: url(/images/ellipse-hero-white.png);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
   }
 }
 
@@ -333,8 +351,16 @@
 
   color: $primary-white-color;
 
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media screen and(min-width: 1280px) {
     font-size: 14px;
     line-height: 1.29;
+
+    margin-bottom: 18px;
   }
 }
