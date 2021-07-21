@@ -52,3 +52,4 @@ $('.autoplay').slick({
   autoplaySpeed: 2000,
   arrows:false,
 });
+
