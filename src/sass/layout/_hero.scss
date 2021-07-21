@@ -31,6 +31,29 @@
   width: 346px;
   height: 344px;
 
+  &:hover {
+    animation: animate3 1000ms infinite 300ms;
+    // animation: bounce 1s;
+  }
+
+  @keyframes animate3 {
+    0% {
+      transform: scale(1);
+    }
+
+    25% {
+      transform: scale(1.15);
+    }
+
+    75% {
+      transform: scale(0.85);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     top: -52px;
     left: 40%;
@@ -55,6 +78,49 @@
 
   width: 171px;
   height: 410px;
+
+  &:hover {
+    animation: animate30 750ms infinite 300ms;
+    // animation: bounce 1s;
+  }
+
+  @keyframes animate30 {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(10deg);
+    }
+
+    75% {
+      transform: rotate(-10deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  // @keyframes bounce {
+  //   0%,
+  //   20%,
+  //   60%,
+  //   100% {
+  //     transform: translateY(0px);
+  //     transform: translateY(0px);
+  //   }
+
+  //   40% {
+  //     transform: translateY(-20px);
+  //     transform: translateY(-20px);
+  //   }
+
+  //   80% {
+  //     transform: translateY(-10px);
+  //     transform: translateY(-10px);
+  //   }
+  // }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     top: -35px;
