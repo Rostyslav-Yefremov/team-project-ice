@@ -1,16 +1,15 @@
 .products {
   box-sizing: border-box;
-  margin: 121px 0 98px;
-  padding: 0;
+  padding: 121px 0 98px;
   text-decoration: none;
   font-family: $primary-font;
   font-style: normal;
   list-style: none;
   @media screen and (min-width: $tablet) {
-    margin: 122px 0 112px;
+    padding: 122px 0 112px;
   }
   @media screen and (min-width: $desktop) {
-    margin: 127px 0 119px;
+    padding: 127px 0 119px;
   }
 
   &__title {
@@ -400,7 +399,7 @@
   left: 50%;
   top: 50%;
   background: radial-gradient(at bottom, #e8ffcb, $bg-color-card3);
-  text-shadow: 1px 1px 0.3em #4b8500, 2px 2px 2em #c2e29790;
+  text-shadow: 1px 1px 0.3em #365f00, 2px 2px 2em #c2e29790;
 }
 
 .open-block-text {
