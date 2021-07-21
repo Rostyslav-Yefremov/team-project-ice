@@ -55,7 +55,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 2000;
+  z-index: 5;
   @media screen and (min-width: 1280px) {
     display: none;
     pointer-events: none;
@@ -111,7 +111,7 @@
   );
   opacity: 1;
   overflow-y: auto;
-  z-index: 25000;
+  z-index: 2500;
 }
 
 .backdrop.closed {
@@ -181,6 +181,7 @@
 .buying__list {
   display: flex;
   margin-bottom: 35px;
+  list-style: none;
 }
 
 .buying__item {
