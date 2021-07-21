@@ -293,8 +293,19 @@
   0% {
     transform: none;
   }
+  // 100% {
+  //   // transform: rotareZ(90deg);
+  // }
+}
+@keyframes text {
+  0% {
+    transform: scaleX(1.0);
+  }
+  50% {
+    transform: scaleX(1.15);
+  }
   100% {
-    transform: scaleZ(90deg);
+    transform: scaleX(1.0);
   }
 }
 
@@ -365,7 +376,7 @@
 #open-block-1:target .open-block-inner {
   left: 50%;
   top: 50%;
-  background-color: $bg-color-card1;
+  background: radial-gradient(at bottom, #ffcad8, $bg-color-card1);
   text-shadow: 1px 1px 0.3em #860022, 2px 2px 2em #ff004090;
 }
 
@@ -378,7 +389,7 @@
 #open-block-2:target .open-block-inner {
   left: 50%;
   top: 50%;
-  background-color: $bg-color-card2;
+  background: radial-gradient(at bottom, #ffe9c9, $bg-color-card2);
   text-shadow: 1px 1px 0.3em #854d00, 2px 2px 2em #ff950090;
 }
 
@@ -390,7 +401,7 @@
 #open-block-3:target .open-block-inner {
   left: 50%;
   top: 50%;
-  background-color: $bg-color-card3;
+  background: radial-gradient(at bottom, #e8ffcb, $bg-color-card3);
   text-shadow: 1px 1px 0.3em #4b8500, 2px 2px 2em #c2e29790;
 }
 
@@ -399,6 +410,9 @@
 
   & .products__boxtitle {
     margin-top: 0;
+    transition-duration: 2500ms;
+    animation: text 2000ms ease-in-out infinite;
+        
     &::after {
       top: 45px;
     }
