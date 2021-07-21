@@ -38,7 +38,7 @@
     width: 324px;
     height: 322px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     top: -36px;
     left: 40%;
@@ -78,13 +78,13 @@
 
   top: 137px;
 
- @media screen and(min-width: 768px) {
-   top: 15px;
- }
+  @media screen and(min-width: 768px) {
+    top: 15px;
+  }
 
- @media screen and(min-width: 1280px) {
-   top:84px;
- }
+  @media screen and(min-width: 1280px) {
+    top: 84px;
+  }
 }
 
 .hero__title {
@@ -144,19 +144,20 @@
   padding: 6px 12px;
   margin-top: 19px;
 
- @media screen and (min-width: 1280px) {
-  font-size: 14px;
-  line-height: 1.29;
-  padding: 10px 20px;
- }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.29;
+    padding: 10px 20px;
+  }
 }
 
 .hero__button--pink {
   background-color: $accent-color;
   color: $primary-white-color;
 
-  &:hover, &:focus {
-    background-color: #C7133E;
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
   }
 }
 
@@ -170,8 +171,9 @@
     margin-left: 15px;
   }
 
-  &:hover, &:focus {
-    background-color: #ECEBEB;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
   }
 }
 
@@ -226,7 +228,7 @@
 
   position: absolute;
   top: 158px;
-  
+
   width: 124px;
   height: 126px;
 
@@ -247,16 +249,16 @@
   position: absolute;
   top: 168px;
   left: 74%;
-  
+
   width: 168px;
   height: 133px;
 
   @media screen and (min-width: 1280px) {
-  top: 350px;
-  left: 71%;
+    top: 350px;
+    left: 71%;
 
-  width: 293px;
-  height: 232px;
+    width: 293px;
+    height: 232px;
   }
 }
 
@@ -274,8 +276,9 @@
 
   cursor: pointer;
 
-  &:hover, &:focus {
-    background-color: #ECEBEB;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
   }
 
   @media screen and (min-width: 1280px) {
@@ -304,6 +307,7 @@
 }
 
 .number__numbers {
+  position: relative;
   font-family: $accent-font;
   font-style: normal;
   font-weight: 400;
@@ -314,30 +318,34 @@
   text-transform: uppercase;
 
   color: $accent-color;
+  z-index: 1;
 
   &::after {
-  content: '';
-  background-image: url(/images/ellipse-hero-white.png);
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-  background-repeat: no-repeat;
+    position: absolute;
+    content: '';
+    background-image: url(/images/ellipse-hero-white.png);
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    right: -8px;
+    top: 0;
   }
-  
 
   @media screen and(min-width: 1280px) {
-  font-size: 46px;
-  line-height:1.15;
+    font-size: 46px;
+    line-height: 1.15;
 
     &::after {
       content: '';
-    background-image: url(/images/ellipse-hero-white.png);
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
+      background-image: url(/images/ellipse-hero-white.png);
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 }
