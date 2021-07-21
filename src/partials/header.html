@@ -36,7 +36,7 @@
                     <use href="../src/images/icon.svg#icon-burger"></use>
                 </svg>
             </button>
-            <button type="submit" class="header-button">
+            <button data-modal-opened type="submit" class="header-button">
                 <span class="header-button__text">Buy now</span>
                 <svg class="header-button__icon" width="8" height="16">
                     <use href="../src/images/icon.svg#icon-arrow-2"></use>
@@ -89,20 +89,20 @@
     <div data-modal class="backdrop touch-transform closed">
         <div class="modal touch-transform">
             <h2 class="modal-header">Which one?</h2>
-            <button data-modal-close class="modal-close__button">
+            <button data-modal-close class="modal-close__button data-modal-close">
                 <svg class="modal-close__icon" width="16" height="16">
                     <use href="../src/images/icon.svg#icon-close"></use>
                 </svg>
             </button>
             <ul class="buying__list" >
                 <li class="buying__item">
-                    <a href=""><img src="../src/images/ice-cream.png" alt="ice-cream"></a>
+                    <a href="#products"><img src="../src/images/ice-cream.png" alt="ice-cream"></a>
                 </li>
                 <li class="buying__item">
-                    <a href=""><img src="../src/images/ice-coffee.png" alt="ice-coffee"></a>
+                    <a href="#products"><img src="../src/images/ice-coffee.png" alt="ice-coffee"></a>
                 </li>
                 <li class="buying__item">
-                    <a href=""><img src="../src/images/milkshakes.png" alt="milkshake"></a>
+                    <a href="#products"><img src="../src/images/milkshakes.png" alt="milkshake"></a>
                 </li>
             </ul>
             <button type="submit" class="modal-buy__button">
