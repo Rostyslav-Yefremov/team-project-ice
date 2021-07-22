@@ -467,19 +467,18 @@
 // ======================================
 .location-list {
   display: none;
-  list-style: none;
   margin-left: -10px;
   padding: 0;
 
-  .actions:hover {
-    display: block;
-    // @media screen and (max-width: 768px) {
-    //   .contacts-card__button--franchise {
-    //     opacity: 0;
-    //     pointer-events: none;
-    //   }
-    // }
-  }
+  // .actions:hover {
+  //   display: block;
+  //   @media screen and (max-width: 768px) {
+  //     .contacts-card__button--franchise {
+  //       opacity: 0;
+  //       pointer-events: none;
+  //     }
+  //   }
+  // }
 }
 // .actions:hover .location-list#actions {
 //   display: block;
@@ -546,4 +545,3 @@
 //     pointer-events: visible;
 //   }
 // }
-
