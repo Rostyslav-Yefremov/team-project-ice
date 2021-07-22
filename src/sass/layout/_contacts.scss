@@ -465,7 +465,7 @@
 }
 
 // ======================================
-.location-list#actions {
+.location-list {
   display: none;
   list-style: none;
   margin-left: -10px;
@@ -481,9 +481,9 @@
     // }
   }
 }
-.actions:hover .location-list#actions {
-  display: block;
-}
+// .actions:hover .location-list#actions {
+//   display: block;
+// }
 
 .location-list__item {
   display: block;
@@ -520,13 +520,24 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__button:active .contacts-card__button--franchise,
-.contacts__button:hover .contacts-card__button--franchise {
+.list-show {
+  display: block;
+}
+
+.bnt-opacity {
   @media screen and (max-width: 767px) {
     opacity: 0;
     pointer-events: none;
   }
 }
+
+// .contacts__button:active .contacts-card__button--franchise,
+// .contacts__button:hover .contacts-card__button--franchise {
+//   @media screen and (max-width: 767px) {
+//     opacity: 0;
+//     pointer-events: none;
+//   }
+// }
 
 // .contacts__button:not(:active) .contacts-card__button--franchise,
 // .contacts__button:not(:hover) .contacts-card__button--franchise {
@@ -535,3 +546,4 @@
 //     pointer-events: visible;
 //   }
 // }
+

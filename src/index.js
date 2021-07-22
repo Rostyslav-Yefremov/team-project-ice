@@ -53,3 +53,18 @@ $('.autoplay').slick({
   arrows:false,
 });
 
+(() => {
+    const locationBtnRef = document.querySelector("[data-location-button]");
+    const locationListRef = document.querySelector("[data-location-list]");
+    const franchiseBtnRef = document.querySelector("[data-franchise-button]");
+
+
+    locationBtnRef.addEventListener("click", () => {
+
+      locationListRef.classList.toggle("list-show");
+      franchiseBtnRef.classList.toggle("bnt-opacity");
+
+
+    });
+
+})();
