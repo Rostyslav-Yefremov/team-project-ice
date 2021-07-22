@@ -467,7 +467,7 @@
 }
 
 // ======================================
-.location-list#actions {
+.location-list {
   display: none;
   list-style: none;
   margin-left: -10px;
@@ -477,9 +477,9 @@
     display: block;
   }
 }
-.actions:hover .location-list#actions {
-  display: block;
-}
+// .actions:hover .location-list#actions {
+//   display: block;
+// }
 
 .location-list__item {
   display: block;
@@ -521,4 +521,14 @@
   transform: rotate(90deg);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-show {
+  display: block;
+}
+
+.bnt-opacity {
+  @media screen and (max-width: 767px) {
+    opacity: 0;
+  }
 }
