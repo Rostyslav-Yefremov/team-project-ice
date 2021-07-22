@@ -1,7 +1,11 @@
 .contacts {
   background-color: $bg-color-secondary;
   color: black;
+  padding-bottom: 113px;
 
+  @include for-size(tablet) {
+    padding-bottom: 165px;
+  }
   @include for-size(desktop) {
     background-image: url('../images/bg-contacts.png');
     background-repeat: no-repeat;
@@ -129,15 +133,9 @@
   margin-bottom: 0;
 }
 .contacts__button {
-  padding-bottom: 113px;
   @include for-size(tablet) {
     display: flex;
     justify-content: center;
-    padding-bottom: 165px;
-  }
-
-  @include for-size(tablet) {
-    padding-bottom: 165px;
   }
 }
 
@@ -475,6 +473,12 @@
 
   .actions:hover {
     display: block;
+    // @media screen and (max-width: 768px) {
+    //   .contacts-card__button--franchise {
+    //     opacity: 0;
+    //     pointer-events: none;
+    //   }
+    // }
   }
 }
 // .actions:hover .location-list#actions {
@@ -503,13 +507,6 @@
     background-color: $border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (max-width: 768px) {
-      .contacts-card__button--franchise {
-        // visibility: hidden;
-        // overflow: hidden;
-      }
-    }
   }
   @media screen and (min-width: 768px) {
     // padding-left: 24px;
@@ -530,5 +527,23 @@
 .bnt-opacity {
   @media screen and (max-width: 767px) {
     opacity: 0;
+    pointer-events: none;
   }
 }
+
+// .contacts__button:active .contacts-card__button--franchise,
+// .contacts__button:hover .contacts-card__button--franchise {
+//   @media screen and (max-width: 767px) {
+//     opacity: 0;
+//     pointer-events: none;
+//   }
+// }
+
+// .contacts__button:not(:active) .contacts-card__button--franchise,
+// .contacts__button:not(:hover) .contacts-card__button--franchise {
+//   @media screen and (max-width: 767px) {
+//     opacity: 1;
+//     pointer-events: visible;
+//   }
+// }
+
